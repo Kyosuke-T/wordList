@@ -181,7 +181,7 @@
         <!--新規追加-->
         <scene sceneID="Ysk-ce-hke">
             <objects>
-                <viewController id="zJa-Ju-CXQ" sceneMemberID="viewController">
+                <viewController id="zJa-Ju-CXQ" customClass="AddViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iqb-Bc-kUK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +219,16 @@
                         <barButtonItem title="Item" id="NgU-cH-6Ns"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="新規追加" id="lop-bQ-kZJ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Xf6-f1-rNc"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="bKw-vc-Aj5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l8C-8E-Fs1">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveWord" destination="zJa-Ju-CXQ" eventType="touchUpInside" id="wpQ-ZO-VjL"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
